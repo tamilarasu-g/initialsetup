@@ -16,8 +16,11 @@ install_epel()
 {
     echo "Installing epel-release"
     sudo yum install -y epel-release &>>${LOGFILE}
-    exit_status "Epel-release could not be installed successfully"
-    exit 1
+    if [[ "${?}" -ne 0 ]]
+    then
+        echo "epel-release could not be installed !!!"
+        exit 1
+    fi
 }
 
 # Dialog box for installation of tools
