@@ -119,5 +119,5 @@ case $DISTRO in
         ;;
 esac
 
-echo "Please exit of out of the shell and reload the session to see the effects"
-exit 0
+# echo "Please exit of out of the shell and reload the session to see the effects"
+# exit 0
